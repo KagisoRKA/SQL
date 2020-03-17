@@ -1,10 +1,10 @@
 								PART1: CREATING A DATABASE
 
----------------------------------------------creating a database---------------------------------------
+------------------------------------------------creating a database----------------------------------------------------------
 
 > CREATE DATABASE Umuzi
 
-------------------------creating tables, primary keys with auto-increment & foreign keys---------------
+-----------------------------creating tables, primary keys with auto-increment & foreign keys--------------------------------
 
 > CREATE TABLE Customers(
 CustomerID serial NOT NULL PRIMARY KEY,
@@ -54,7 +54,7 @@ FOREIGN KEY (PaymentID) REFERENCES Payments(PaymentID),
 FOREIGN KEY (FulfilledByEmployeeID) REFERENCES Employees(EmployeeID)
 );
 
---------------------------------------Inserting records into the tables-------------------------------------
+-----------------------------------------inserting records into the tables---------------------------------------------------
 
 > INSERT INTO customers (firstname, lastname, gender, address, phone, email, city, country) VALUES
 ('John', 'Hibert', 'Male', '284 chaucer st', 084789657, 'john@gmail.com', 'Johannesburg', 'SouthAfrica'),
@@ -83,7 +83,7 @@ FOREIGN KEY (FulfilledByEmployeeID) REFERENCES Employees(EmployeeID)
 (1, 2, 2, '2018-04-09', '2018-03-09', 'Shipped'),
 (3, 3, 3, '2018-06-09', NULL, 'Not shipped');
 
---------------------------------------Documenting what information is stored in the database-------------------
+-----------------------------------------Documenting what information is stored in the database------------------------------
 
 > COMMENT ON TABLE customers IS 'This table stores customer records (customerID, First and Last Name, Gender, Address, Phone, Email, City, Country)'
 
