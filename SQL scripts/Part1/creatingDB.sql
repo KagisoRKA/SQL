@@ -1,6 +1,6 @@
 -- Adminer 4.7.6 PostgreSQL dump
 
-/* Creating database "umuzi" which has contains tables:
+/* Creating database "umuzi" which contains the following tables:
 * Customers with COLUMNS CustomerID, FirstName, LastName, Gender, Address, Phone, Email, City, Country
 
 * Employees with COLUMNS EmployeeID, FirstName, LastName, Email, JobTitle
